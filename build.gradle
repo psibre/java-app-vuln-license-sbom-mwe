@@ -4,3 +4,11 @@ plugins {
 
 group 'com.example'
 version '0.1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation group: 'edu.stanford.nlp', name: 'stanford-corenlp', version: '4.3.2'
+}

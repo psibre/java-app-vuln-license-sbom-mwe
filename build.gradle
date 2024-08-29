@@ -1,5 +1,12 @@
 plugins {
     id 'application'
+    id 'org.cyclonedx.bom' version '1.10.0'
+}
+
+cyclonedxBom {
+    includeConfigs = ["runtimeClasspath"]
+    includeLicenseText = false
+    outputFormat = "json"
 }
 
 group 'com.example'
